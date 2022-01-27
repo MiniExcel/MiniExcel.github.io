@@ -30,33 +30,24 @@
       <h1 id='code'></h1>
       <hr>
       <div id='dotnate'>
-        <!-- <h1 class="cover-heading">PayPal</h1> -->
-        <div id="paypal-button-container-P-6S376169TG8843517MHWUC7Q"></div>
-        <script
-          src="https://www.paypal.com/sdk/js?client-id=Aa9Fg2Q6U2txZ2hurlV2mWvfvSMvxGEDGJRtRRU1CiFij-Cj6PKK7B3V6G6hXPiF0OEoOCLKiHHQQNqI&vault=true&intent=subscription"
-          data-sdk-integration-source="button-factory"></script>
-        <script>
-          paypal
-            .Buttons({
-              style: {
-                shape: 'rect',
-                color: 'gold',
-                layout: 'vertical',
-                label: 'subscribe',
-              },
-              createSubscription: function (data, actions) {
-                return actions.subscription.create({
-                  /* Creates the subscription */
-                  plan_id: 'P-6S376169TG8843517MHWUC7Q',
-                  quantity: 1, // The quantity of the product for a subscription
-                });
-              },
-              onApprove: function (data, actions) {
-                alert(data.subscriptionID); // You can add optional success message for the subscriber here
-              },
-            })
-            .render('#paypal-button-container-P-6S376169TG8843517MHWUC7Q'); // Renders the PayPal button
-        </script>    
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="XF7U44UHSW9F6">
+          <input type="hidden" name="on0" value="Plan">
+          <h1>PayPal</h1>
+          <select name="os0" class="form-control">
+            <option value="Plan1">Plan1 $5.00 USD</option>
+            <option value="Plan2">Plan2 $15.00 USD</option>
+            <option value="Plan3">Plan3 $25.00 USD</option>
+            <option value="Plan4">Plan4 $35.00 USD</option>
+            <option value="Plan5">Plan5 $45.00 USD</option>
+          </select>
+          <br>
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" class="btn btn-success" border="0" name="submit" alt="PayPal" value="Buy">
+          <img alt="" border="0" src="https://www.paypalobjects.com/zh_TW/i/scr/pixel.gif" width="1" height="1">
+          </form>
+           
         <hr>    
         <!-- alipay -->
         <h1 class="cover-heading">Alipay - 支付宝</h1>
