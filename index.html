@@ -1,0 +1,157 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Get Free License Code or Donate MiniExcel</title>
+  <style>
+    #id1 {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      text-align: center;
+      box-sizing: border-box;
+      margin: .67em 0;
+      color: #4c4d4e;
+      font-family: inherit;
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      font-size: 42px;
+    }
+  
+    .orange {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      text-align: center;
+      font-family: inherit;
+      line-height: 1.1;
+      font-size: 42px;
+      box-sizing: border-box;
+      font-weight: 700;
+      color: #f7941e;
+    }
+  </style>  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 id="id1">
+    Power the <strong class="orange">MiniExcel </strong> with your donation
+  </h1>
+  <hr>
+  <h1>Get License Code</h1>
+  <button class="getcodebtn" onclick="getCode()">Click to get code</button>
+  
+  <hr/>
+  <pre>
+    MiniExcel.LISENCE_CODE = "Your Code"; //Set Code Before Your Code
+    var rows = MiniExcel.Query(path);    </pre>
+  <hr>
+  <h1 id='code'></h1>
+
+    <div>
+      
+    </div>
+
+  <div id="paypal-button-container-P-6S376169TG8843517MHWUC7Q"></div>
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=Aa9Fg2Q6U2txZ2hurlV2mWvfvSMvxGEDGJRtRRU1CiFij-Cj6PKK7B3V6G6hXPiF0OEoOCLKiHHQQNqI&vault=true&intent=subscription"
+    data-sdk-integration-source="button-factory"></script>
+  <script>
+    paypal
+      .Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe',
+        },
+        createSubscription: function (data, actions) {
+          return actions.subscription.create({
+            /* Creates the subscription */
+            plan_id: 'P-6S376169TG8843517MHWUC7Q',
+            quantity: 1, // The quantity of the product for a subscription
+          });
+        },
+        onApprove: function (data, actions) {
+          alert(data.subscriptionID); // You can add optional success message for the subscriber here
+        },
+      })
+      .render('#paypal-button-container-P-6S376169TG8843517MHWUC7Q'); // Renders the PayPal button
+  </script>
+  <hr>
+  <a href="https://user-images.githubusercontent.com/12729184/150716115-a56dc7f6-d9a7-4f2e-9eed-2b2e0b1e9f9c.png">
+    <img src="https://user-images.githubusercontent.com/12729184/150716115-a56dc7f6-d9a7-4f2e-9eed-2b2e0b1e9f9c.png"
+      alt="alipay" width="200px">
+  </a>
+  <a href="https://user-images.githubusercontent.com/12729184/150735491-822d4a95-4b45-40fb-b0b0-08731b29dd74.png">
+    <img src="https://user-images.githubusercontent.com/12729184/150735491-822d4a95-4b45-40fb-b0b0-08731b29dd74.png"
+      alt="alipay" width="200px">
+  </a>
+  <a href="https://user-images.githubusercontent.com/12729184/150735586-f0dd5a43-2c94-473b-adfd-4fa6e9702da3.png">
+    <img src="https://user-images.githubusercontent.com/12729184/150735586-f0dd5a43-2c94-473b-adfd-4fa6e9702da3.png"
+      alt="alipay" width="200px">
+  </a>
+
+  <hr>
+
+  <style>
+    .getcodebtn {
+      background-color: #44c767;
+      border-radius: 9px;
+      border: 1px solid #18ab29;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 17px;
+      padding: 16px 100px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #2f6627;
+    }
+
+    .getcodebtn:hover {
+      background-color: #5cbf2a;
+    }
+
+    .getcodebtn:active {
+      position: relative;
+      top: 1px;
+    }
+  </style>
+  <script>
+    var codes = [
+      "096b9eff-c0e7-4813-8352-211811063214",
+      "e5db2221-aef1-4f84-8121-82182c179863",
+      "71430e9c-c8e0-4a7d-bab6-261535b2ac9d",
+      "0cdbd11c-60c5-41cd-9ba3-3d0de67f72df",
+      "33498913-6a61-4940-929b-6bab04c02bba",
+      "9557941a-acf7-4dbd-a81b-bc46aafa15b7",
+      "e470d4df-f4ec-4895-82cd-c3ba76d94ca8",
+      "18c7fed4-3688-42aa-9a0f-bd57021f81d3",
+      "8ce7ea6f-aa15-4ea7-81a0-334308313508",
+      "39982af1-3452-4489-9fb3-5f86a51835c1",
+    ];
+    var idx = Math.floor(Math.random() * 10);
+    function getCode() {
+      document.getElementById("code").innerHTML = "Your Code : <br>" + codes[idx] + "<hr>"
+    }
+  </script>
+  <!-- Default Statcounter code for MiniExcel
+https://shps951023.github.io/MiniExcel/ -->
+  <script type="text/javascript">
+    var sc_project = 12704976;
+    var sc_invisible = 1;
+    var sc_security = "e9b8b974"; 
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+          class="statcounter" src="https://c.statcounter.com/12704976/0/e9b8b974/1/" alt="Web Analytics"
+          referrerPolicy="no-referrer-when-downgrade"></a></div>
+  </noscript>
+  <!-- End of Statcounter Code -->
+</body>
+
+</html>
