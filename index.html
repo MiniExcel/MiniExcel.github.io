@@ -94,7 +94,9 @@
     ];
     var idx = Math.floor(Math.random() * 10);
     function getCode() {
-      document.getElementById("code").innerHTML = "Your Code : <br>" + codes[idx] + "<hr>"
+      document.getElementById("code").innerHTML = "Your Code <br>" + codes[idx] + "<hr>"
+        + "Demo <br><p class=\"lead\">MiniExcel.LISENCE_CODE = \""+ codes[idx]+"\"; <br>var rows = MiniExcel.Query(\"File Path\");</p>"
+        + "<hr>"
     }
     function donate(){
       document.getElementById("dotnate").hidden = false;
