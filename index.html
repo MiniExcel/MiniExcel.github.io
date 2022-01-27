@@ -3,123 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <title>Get Free License Code or Donate MiniExcel</title>
-  <style>
-    #id1 {
-      -webkit-text-size-adjust: 100%;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      text-align: center;
-      box-sizing: border-box;
-      margin: .67em 0;
-      color: #4c4d4e;
-      font-family: inherit;
-      font-weight: 300;
-      line-height: 1.1;
-      margin-bottom: 10px;
-      margin-top: 20px;
-      font-size: 42px;
-    }
-  
-    .orange {
-      -webkit-text-size-adjust: 100%;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      text-align: center;
-      font-family: inherit;
-      line-height: 1.1;
-      font-size: 42px;
-      box-sizing: border-box;
-      font-weight: 700;
-      color: #f7941e;
-    }
-  </style>  
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="site.css">
 </head>
 
-<body>
-  <h1 id="id1">
-    Power the <strong class="orange">MiniExcel </strong> with your donation
-  </h1>
-  <hr>
-  <h1>Get License Code</h1>
-  <button class="getcodebtn" onclick="getCode()">Click to get code</button>
-  
-  <hr/>
-  <pre>
-    MiniExcel.LISENCE_CODE = "Your Code"; //Set Code Before Your Code
-    var rows = MiniExcel.Query(path);    </pre>
-  <hr>
-  <h1 id='code'></h1>
+<body class="text-center">
 
-    <div>
-      
-    </div>
+  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">MiniExcel</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link active" href="https://github.com/shps951023/MiniExcel">MiniExcel Github</a>
+          <a class="nav-link active" href="https://gitee.com/dotnetchina/MiniExcel">MiniExcel Gitee</a>
+        </nav>
+      </div>
+    </header>
 
-  <div id="paypal-button-container-P-6S376169TG8843517MHWUC7Q"></div>
-  <script
-    src="https://www.paypal.com/sdk/js?client-id=Aa9Fg2Q6U2txZ2hurlV2mWvfvSMvxGEDGJRtRRU1CiFij-Cj6PKK7B3V6G6hXPiF0OEoOCLKiHHQQNqI&vault=true&intent=subscription"
-    data-sdk-integration-source="button-factory"></script>
-  <script>
-    paypal
-      .Buttons({
-        style: {
-          shape: 'rect',
-          color: 'gold',
-          layout: 'vertical',
-          label: 'subscribe',
-        },
-        createSubscription: function (data, actions) {
-          return actions.subscription.create({
-            /* Creates the subscription */
-            plan_id: 'P-6S376169TG8843517MHWUC7Q',
-            quantity: 1, // The quantity of the product for a subscription
-          });
-        },
-        onApprove: function (data, actions) {
-          alert(data.subscriptionID); // You can add optional success message for the subscriber here
-        },
-      })
-      .render('#paypal-button-container-P-6S376169TG8843517MHWUC7Q'); // Renders the PayPal button
-  </script>
-  <hr>
-  <a href="https://user-images.githubusercontent.com/12729184/150716115-a56dc7f6-d9a7-4f2e-9eed-2b2e0b1e9f9c.png">
-    <img src="https://user-images.githubusercontent.com/12729184/150716115-a56dc7f6-d9a7-4f2e-9eed-2b2e0b1e9f9c.png"
-      alt="alipay" width="200px">
-  </a>
-  <a href="https://user-images.githubusercontent.com/12729184/150735491-822d4a95-4b45-40fb-b0b0-08731b29dd74.png">
-    <img src="https://user-images.githubusercontent.com/12729184/150735491-822d4a95-4b45-40fb-b0b0-08731b29dd74.png"
-      alt="alipay" width="200px">
-  </a>
-  <a href="https://user-images.githubusercontent.com/12729184/150735586-f0dd5a43-2c94-473b-adfd-4fa6e9702da3.png">
-    <img src="https://user-images.githubusercontent.com/12729184/150735586-f0dd5a43-2c94-473b-adfd-4fa6e9702da3.png"
-      alt="alipay" width="200px">
-  </a>
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Power <strong class="orange">MiniExcel </strong> <br>with your donation</h1>
+      <p class="lead">Buy me a coffee can help MiniExcel a lot.</p>
+      <p class="lead">
+        <div href="#" class="btn btn-lg btn-secondary" onclick="getCode()">Get Lincense Code</div>
+        <div href="#" class="btn btn-lg btn-secondary" onclick="donate()">Donate MiniExcel</div>
+      </p>
+      <h1 id='code'></h1>
+      <hr>
+      <div id='dotnate'>
+        <!-- <h1 class="cover-heading">PayPal</h1> -->
+        <div id="paypal-button-container-P-6S376169TG8843517MHWUC7Q"></div>
+        <script
+          src="https://www.paypal.com/sdk/js?client-id=Aa9Fg2Q6U2txZ2hurlV2mWvfvSMvxGEDGJRtRRU1CiFij-Cj6PKK7B3V6G6hXPiF0OEoOCLKiHHQQNqI&vault=true&intent=subscription"
+          data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal
+            .Buttons({
+              style: {
+                shape: 'rect',
+                color: 'gold',
+                layout: 'vertical',
+                label: 'subscribe',
+              },
+              createSubscription: function (data, actions) {
+                return actions.subscription.create({
+                  /* Creates the subscription */
+                  plan_id: 'P-6S376169TG8843517MHWUC7Q',
+                  quantity: 1, // The quantity of the product for a subscription
+                });
+              },
+              onApprove: function (data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+              },
+            })
+            .render('#paypal-button-container-P-6S376169TG8843517MHWUC7Q'); // Renders the PayPal button
+        </script>    
+        <hr>    
+        <!-- alipay -->
+        <h1 class="cover-heading">Alipay - 支付宝</h1>
+        <a href="https://user-images.githubusercontent.com/12729184/150716115-a56dc7f6-d9a7-4f2e-9eed-2b2e0b1e9f9c.png">
+          <img src="https://user-images.githubusercontent.com/12729184/150716115-a56dc7f6-d9a7-4f2e-9eed-2b2e0b1e9f9c.png"
+            alt="alipay" width="200px">
+        </a>
+        <a href="https://user-images.githubusercontent.com/12729184/150735491-822d4a95-4b45-40fb-b0b0-08731b29dd74.png">
+          <img src="https://user-images.githubusercontent.com/12729184/150735491-822d4a95-4b45-40fb-b0b0-08731b29dd74.png"
+            alt="alipay" width="200px">
+        </a>
+      </div>
+    </main>
 
-  <hr>
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>MiniExcel by <a href="#">@Wei-Han-Lin</a>.</p>
+      </div>
+    </footer>
+  </div>
 
-  <style>
-    .getcodebtn {
-      background-color: #44c767;
-      border-radius: 9px;
-      border: 1px solid #18ab29;
-      display: inline-block;
-      cursor: pointer;
-      color: #ffffff;
-      font-family: Arial;
-      font-size: 17px;
-      padding: 16px 100px;
-      text-decoration: none;
-      text-shadow: 0px 1px 0px #2f6627;
-    }
 
-    .getcodebtn:hover {
-      background-color: #5cbf2a;
-    }
-
-    .getcodebtn:active {
-      position: relative;
-      top: 1px;
-    }
-  </style>
   <script>
     var codes = [
       "096b9eff-c0e7-4813-8352-211811063214",
@@ -137,6 +96,12 @@
     function getCode() {
       document.getElementById("code").innerHTML = "Your Code : <br>" + codes[idx] + "<hr>"
     }
+    function donate(){
+      document.getElementById("dotnate").hidden = false;
+    }
+    (function(){
+      document.getElementById("dotnate").hidden = true;
+    })();
   </script>
   <!-- Default Statcounter code for MiniExcel
 https://shps951023.github.io/MiniExcel/ -->
