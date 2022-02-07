@@ -21,34 +21,19 @@
     </header>
 
     <main role="main" class="inner cover">
-      <h1 class="cover-heading">Power <strong class="orange">MiniExcel </strong> <br>with your donation</h1>
-      <p class="lead">Buy me a coffee can help MiniExcel a lot.</p>
-      <p class="lead">
-        <div href="#" class="btn btn-lg btn-secondary" onclick="getCode()">Get Lincense Code</div>
-        <div href="#" class="btn btn-lg btn-secondary" onclick="donate()">Donate MiniExcel</div>
-      </p>
-      <h1 id='code'></h1>
-      <hr>
+      <div id="subtitle">
+        <h1 class="cover-heading">Power <strong class="orange">MiniExcel </strong> <br>with your donation</h1>
+        <!-- <p class="lead">Buy me a coffee can help MiniExcel a lot.</p> -->
+        <p class="lead">
+          <!-- <div href="#" class="btn btn-lg btn-secondary" onclick="getCode()">Get Lincense Code</div> -->
+          <div href="#" class="btn btn-lg btn-secondary" onclick="donate()">Donate MiniExcel</div>
+        </p>
+        <h1 id='code'></h1>
+        <hr>
+      </div>
+
       <div id='dotnate'>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="XF7U44UHSW9F6">
-          <input type="hidden" name="on0" value="Plan">
-          <h1>PayPal</h1>
-          <select name="os0" class="form-control">
-            <option value="Plan1">Plan1 $5.00 USD</option>
-            <option value="Plan2">Plan2 $15.00 USD</option>
-            <option value="Plan3">Plan3 $25.00 USD</option>
-            <option value="Plan4">Plan4 $35.00 USD</option>
-            <option value="Plan5">Plan5 $45.00 USD</option>
-          </select>
-          <br>
-          <input type="hidden" name="currency_code" value="USD">
-          <input type="submit" class="btn btn-success" border="0" name="submit" alt="PayPal" value="Buy">
-          <img alt="" border="0" src="https://www.paypalobjects.com/zh_TW/i/scr/pixel.gif" width="1" height="1">
-          </form>
-           
-        <hr>    
+
         <!-- alipay -->
         <h1 class="cover-heading">Alipay - 支付宝</h1>
         <a href="https://user-images.githubusercontent.com/12729184/150716115-a56dc7f6-d9a7-4f2e-9eed-2b2e0b1e9f9c.png">
@@ -67,6 +52,25 @@
         Account 賬號 705979061551  
       </p>   
       <hr> 
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="XF7U44UHSW9F6">
+          <input type="hidden" name="on0" value="Plan">
+          <h1>PayPal</h1>
+          <select name="os0" class="form-control">
+            <option value="Plan1">Plan1 $5.00 USD</option>
+            <option value="Plan2">Plan2 $15.00 USD</option>
+            <option value="Plan3">Plan3 $25.00 USD</option>
+            <option value="Plan4">Plan4 $35.00 USD</option>
+            <option value="Plan5">Plan5 $45.00 USD</option>
+          </select>
+          <br>
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" class="btn btn-success" border="0" name="submit" alt="PayPal" value="Buy">
+          <img alt="" border="0" src="https://www.paypalobjects.com/zh_TW/i/scr/pixel.gif" width="1" height="1">
+          </form>
+           
+        <hr>          
       </div>
     </main>
 
@@ -99,6 +103,7 @@
     }
     function donate(){
       document.getElementById("dotnate").hidden = false;
+      document.getElementById("subtitle").hidden = true;
     }
     (function(){
       document.getElementById("dotnate").hidden = true;
