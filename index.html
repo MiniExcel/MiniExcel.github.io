@@ -32,24 +32,19 @@
         <hr> -->
       </div>
 
-      <div >
+      <div>
         <h1 class="cover-heading">微信/支付宝</h1>
         <a href="https://user-images.githubusercontent.com/12729184/158003727-ca348041-5e59-44bc-a694-f400777e0252.jpg">
-          <img src="https://user-images.githubusercontent.com/12729184/158003727-ca348041-5e59-44bc-a694-f400777e0252.jpg"
+          <img
+            src="https://user-images.githubusercontent.com/12729184/158003727-ca348041-5e59-44bc-a694-f400777e0252.jpg"
             alt="wechat" width="200px" height="300px">
         </a>
         <a href="https://user-images.githubusercontent.com/12729184/158003731-6d132872-19c3-4840-b1af-97aa22f9bf4b.jpg">
-          <img src="https://user-images.githubusercontent.com/12729184/158003731-6d132872-19c3-4840-b1af-97aa22f9bf4b.jpg"
+          <img
+            src="https://user-images.githubusercontent.com/12729184/158003731-6d132872-19c3-4840-b1af-97aa22f9bf4b.jpg"
             alt="alipay" width="200px" height="300px">
         </a>
-        <hr> 
-        <!-- YuShan -->
-        <h1 class="cover-heading">E.SUN Bank 玉山銀行</h1>
-        <p class="lead">  
-        Bank Code 銀行代號 808<br>
-        Account 賬號 705979061551  
-      </p>   
-      <hr> 
+        <hr>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="XF7U44UHSW9F6">
@@ -66,14 +61,28 @@
           <input type="hidden" name="currency_code" value="USD">
           <input type="submit" class="btn btn-success" border="0" name="submit" alt="PayPal" value="Buy">
           <img alt="" border="0" src="https://www.paypalobjects.com/zh_TW/i/scr/pixel.gif" width="1" height="1">
-          </form>
-        <hr>          
+        </form>
+        <hr>
+        <!-- 绿界 -->
+        <h1 class="cover-heading">绿界科技ECPay</h1>
+        <p class="lead">
+          <a href="https://p.ecpay.com.tw/693B4A0"><img src="https://payment.ecpay.com.tw/Content/themes/WebStyle20170517/images/ecgo.png" /></a>
+        </p>
+        <hr>
+        <!-- YuShan -->
+        <h1 class="cover-heading">E.SUN Bank 玉山銀行</h1>
+        <p class="lead">
+          Bank Code 銀行代號 808<br>
+          Account 賬號 705979061551
+        </p>
+        <hr>
+
       </div>
     </main>
 
     <footer class="mastfoot mt-auto">
       <div class="inner">
-        <p>MiniExcel by <a href="#">@Wei-Han-Lin</a>.</p>
+        <p>MiniExcel by <a href="#">@Wei Lin</a>.</p>
       </div>
     </footer>
   </div>
@@ -95,14 +104,14 @@
     var idx = Math.floor(Math.random() * 10);
     function getCode() {
       document.getElementById("code").innerHTML = "Your Code <br>" + codes[idx] + "<hr>"
-        + "Demo <br><p class=\"lead\">MiniExcel.LISENCE_CODE = \""+ codes[idx]+"\"; <br>var rows = MiniExcel.Query(\"File Path\");</p>"
+        + "Demo <br><p class=\"lead\">MiniExcel.LISENCE_CODE = \"" + codes[idx] + "\"; <br>var rows = MiniExcel.Query(\"File Path\");</p>"
         + "<hr>"
     }
-    function donate(){
+    function donate() {
       document.getElementById("dotnate").hidden = false;
       document.getElementById("subtitle").hidden = true;
     }
-    (function(){
+    (function () {
       document.getElementById("dotnate").hidden = true;
     })();
   </script>
