@@ -2,8 +2,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Get Free License Code or Donate MiniExcel</title>
-  <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
+  <title>Mini-Software</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="site.css">
 </head>
 
@@ -13,10 +13,10 @@
 
     <header class="masthead mb-auto">
       <div class="inner">
-        <h3 class="masthead-brand">MiniExcel</h3>
+        <h3 class="masthead-brand">Mini-Software</h3>
         <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link active" href="https://github.com/shps951023/MiniExcel">MiniExcel Github</a>
-          <a class="nav-link active" href="https://gitee.com/dotnetchina/MiniExcel">MiniExcel Gitee</a>
+          <a class="nav-link active" href="https://github.com/Mini-Software">Mini-Software Github</a>
+          <a class="nav-link active" href="https://gitee.com/shps951023">Mini-Software Gitee</a>
         </nav>
       </div>
     </header>
@@ -24,9 +24,9 @@
     <main role="main" class="inner cover">
       <!-- <br><br><br> -->
       <div id="subtitle">
-        <!-- <h1 class="cover-heading">Power <strong class="orange">MiniExcel </strong> <br>with your donation</h1> -->
+        <!-- <h1 class="cover-heading">Power <strong class="orange">Mini-Software </strong> <br>with your donation</h1> -->
         <!-- <p class="lead">
-          <div href="#" class="btn btn-lg btn-secondary" onclick="donate()">Donate MiniExcel</div>
+          <div href="#" class="btn btn-lg btn-secondary" onclick="donate()">Donate Mini-Software</div>
         </p>
         <h1 id='code'></h1>
         <hr> -->
@@ -82,41 +82,11 @@
 
     <footer class="mastfoot mt-auto">
       <div class="inner">
-        <p>MiniExcel by <a href="#">@Wei Lin</a>.</p>
+        <p>Mini-Software by <a href="#">@Wei Lin</a>.</p>
       </div>
     </footer>
   </div>
 
-
-  <script>
-    var codes = [
-      "096b9eff-c0e7-4813-8352-211811063214",
-      "e5db2221-aef1-4f84-8121-82182c179863",
-      "71430e9c-c8e0-4a7d-bab6-261535b2ac9d",
-      "0cdbd11c-60c5-41cd-9ba3-3d0de67f72df",
-      "33498913-6a61-4940-929b-6bab04c02bba",
-      "9557941a-acf7-4dbd-a81b-bc46aafa15b7",
-      "e470d4df-f4ec-4895-82cd-c3ba76d94ca8",
-      "18c7fed4-3688-42aa-9a0f-bd57021f81d3",
-      "8ce7ea6f-aa15-4ea7-81a0-334308313508",
-      "39982af1-3452-4489-9fb3-5f86a51835c1",
-    ];
-    var idx = Math.floor(Math.random() * 10);
-    function getCode() {
-      document.getElementById("code").innerHTML = "Your Code <br>" + codes[idx] + "<hr>"
-        + "Demo <br><p class=\"lead\">MiniExcel.LISENCE_CODE = \"" + codes[idx] + "\"; <br>var rows = MiniExcel.Query(\"File Path\");</p>"
-        + "<hr>"
-    }
-    function donate() {
-      document.getElementById("dotnate").hidden = false;
-      document.getElementById("subtitle").hidden = true;
-    }
-    (function () {
-      document.getElementById("dotnate").hidden = true;
-    })();
-  </script>
-  <!-- Default Statcounter code for MiniExcel
-https://shps951023.github.io/MiniExcel/ -->
   <script type="text/javascript">
     var sc_project = 12704976;
     var sc_invisible = 1;
