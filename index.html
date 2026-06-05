@@ -9,7 +9,7 @@
 
 <body class="text-center">
 
-  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+  <div class="cover-container d-flex p-3 mx-auto flex-column">
 
     <header class="masthead mb-auto">
       <div class="inner">
@@ -32,50 +32,52 @@
         <hr> -->
       </div>
 
-      <div>
-        <h1 class="cover-heading">微信/支付宝</h1>
-        <a href="https://user-images.githubusercontent.com/12729184/158003727-ca348041-5e59-44bc-a694-f400777e0252.jpg">
-          <img
-            src="https://user-images.githubusercontent.com/12729184/158003727-ca348041-5e59-44bc-a694-f400777e0252.jpg"
-            alt="wechat" width="200px" height="300px">
-        </a>
-        <a href="https://user-images.githubusercontent.com/12729184/158003731-6d132872-19c3-4840-b1af-97aa22f9bf4b.jpg">
-          <img
-            src="https://user-images.githubusercontent.com/12729184/158003731-6d132872-19c3-4840-b1af-97aa22f9bf4b.jpg"
-            alt="alipay" width="200px" height="300px">
-        </a>
-        <hr>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="XF7U44UHSW9F6">
-          <input type="hidden" name="on0" value="Plan">
-          <h1>PayPal</h1>
-          <select name="os0" class="form-control">
-            <option value="Plan1">Plan1 $5.00 USD</option>
-            <option value="Plan2">Plan2 $15.00 USD</option>
-            <option value="Plan3">Plan3 $25.00 USD</option>
-            <option value="Plan4">Plan4 $35.00 USD</option>
-            <option value="Plan5">Plan5 $45.00 USD</option>
-          </select>
-          <br>
-          <input type="hidden" name="currency_code" value="USD">
-          <input type="submit" class="btn btn-success" border="0" name="submit" alt="PayPal" value="Buy">
-          <img alt="" border="0" src="https://www.paypalobjects.com/zh_TW/i/scr/pixel.gif" width="1" height="1">
-        </form>
-        <hr>
-        <!-- 绿界 -->
-        <h1 class="cover-heading">绿界科技ECPay</h1>
-        <p class="lead">
-          <a href="https://p.ecpay.com.tw/693B4A0"><img src="https://payment.ecpay.com.tw/Content/themes/WebStyle20170517/images/ecgo.png" /></a>
-        </p>
-        <hr>
-        <!-- YuShan -->
-        <h1 class="cover-heading">E.SUN Bank 玉山銀行</h1>
-        <p class="lead">
-          Bank Code 銀行代號 808<br>
-          Account 賬號 705979061551
-        </p>
-        <hr>
+      <div class="payment-grid">
+
+        <div class="payment-card" style="
+    margin-top: 10px;
+">
+          <h2 class="payment-title">PayPal</h2>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="XF7U44UHSW9F6">
+            <input type="hidden" name="on0" value="Plan">
+            <select name="os0" class="form-control">
+              <option value="Plan1">Plan1 $5.00 USD</option>
+              <option value="Plan2">Plan2 $15.00 USD</option>
+              <option value="Plan3">Plan3 $25.00 USD</option>
+              <option value="Plan4">Plan4 $35.00 USD</option>
+              <option value="Plan5">Plan5 $45.00 USD</option>
+            </select>
+            <br>
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="submit" class="btn btn-success" border="0" name="submit" alt="PayPal" value="Buy">
+            <img alt="" border="0" src="https://www.paypalobjects.com/zh_TW/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
+
+        <div class="payment-card">
+          <h2 class="payment-title">微信 / 支付宝</h2>
+          <div class="qr-group">
+            <a href="https://user-images.githubusercontent.com/12729184/158003727-ca348041-5e59-44bc-a694-f400777e0252.jpg">
+              <img
+                src="https://user-images.githubusercontent.com/12729184/158003727-ca348041-5e59-44bc-a694-f400777e0252.jpg"
+                alt="wechat" width="180px" height="270px">
+            </a>
+            <a href="https://user-images.githubusercontent.com/12729184/158003731-6d132872-19c3-4840-b1af-97aa22f9bf4b.jpg">
+              <img
+                src="https://user-images.githubusercontent.com/12729184/158003731-6d132872-19c3-4840-b1af-97aa22f9bf4b.jpg"
+                alt="alipay" width="180px" height="270px">
+            </a>
+          </div>
+        </div>
+
+        <div class="payment-card">
+          <h2 class="payment-title">绿界科技 ECPay</h2>
+          <p class="lead">
+            <a href="https://p.ecpay.com.tw/693B4A0"><img src="https://payment.ecpay.com.tw/Content/themes/WebStyle20170517/images/ecgo.png" /></a>
+          </p>
+        </div>
 
       </div>
     </main>
